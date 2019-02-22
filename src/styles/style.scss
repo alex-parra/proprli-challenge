@@ -1,0 +1,101 @@
+@import "./defaults";
+
+$txtColor: #2c3e50;
+
+/* Generic Styles ------ */
+
+.vdp-datepicker {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translate(0, -25%);
+    border: 5px solid transparent;
+    border-top-color: #999;
+  }
+  input {
+    cursor: pointer;
+  }
+}
+
+@keyframes opacityPulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+/* APP Styles ---------- */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-bottom: 5px solid #008000;
+}
+
+#app > header {
+  flex: 0 0 auto;
+  background-color: #2a2a2a;
+  border-top: 4px solid #008000;
+  padding: 10px 20px;
+  color: #fff;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 {
+    margin: 0;
+    width: 200px;
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+    }
+  }
+}
+
+#app > main {
+  flex: 1 1 100%;
+  padding: 40px 30px 200px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+      font-size: $txtSize;
+    }
+  }
+}
+
+
+.noResults {
+  text-align: center;
+  font-weight: normal;
+  color: #888;
+  font-size: 1em;
+  padding: 20px 20px 60px;
+  h5 {
+    font-size: 22px;
+    margin: 0 0 5px;
+    opacity: 0.6;
+    font-weight: bold;
+  }
+}
+
+
+.timeframes {
+  padding-bottom: 20px;
+}
