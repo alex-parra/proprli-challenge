@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@types/lodash": "^4.14.121",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "vue": "^2.5.22",
     "vue-nestable": "^2.1.1",
     "vue-router": "^3.0.1",
